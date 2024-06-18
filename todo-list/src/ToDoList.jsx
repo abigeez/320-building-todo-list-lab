@@ -8,6 +8,7 @@ function ToDoList () {
         setNewTask(event.target.value);
     }
     function insertTask(){
+        if(newTask.trim()!==""){}
         setTasks(t => [...t,newTask]);
         setNewTask("");
     }
