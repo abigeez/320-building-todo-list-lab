@@ -29,6 +29,7 @@ function ToDoList () {
         </div>
         <div>
             <input
+            className="placeHldr"
             type="text"
             placeholder="Write task here"
             value={newTask}
