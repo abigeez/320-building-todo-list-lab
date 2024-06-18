@@ -5,9 +5,9 @@ function ToDoList () {
     const [newTask,setNewTask] =useState("");
 
     function handleTextChange(event) {
-
+        setNewTask(event.target.value);
     }
-    function addTask(){
+    function insertTask(){
 
     }
 
@@ -32,12 +32,14 @@ function ToDoList () {
             type="text"
             placeholder="Write task here"
             value={newTask}
-            onChange={}
-            
-            
-            
-            />
-            </div></>
+            onChange={handleTextChange}/>
+             <button className="btnOne"
+             onClick={insertTask}
+             >
+
+            </button>
+            </div>
+            </>
     )
 }
 
