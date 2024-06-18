@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function ToDoList () {
-    const [tasks,setTasks] = useState([]);
+    const [tasks,setTasks] = useState(["Go grocery shopping","Hang out with friends at park","Watch something on tv watchlist"]);
     const [newTask,setNewTask] =useState("");
 
     function handleTextChange(event) {
@@ -39,6 +39,9 @@ function ToDoList () {
 
             </button>
             </div>
+            <ol>
+                
+            </ol>
             </>
     )
 }
