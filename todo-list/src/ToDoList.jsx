@@ -11,7 +11,7 @@ function ToDoList () {
 
     }
 
-    function deleteTask(index) {
+    function delTask(index) {
 
     }
 
@@ -41,7 +41,14 @@ function ToDoList () {
             </div>
             <ol>
                 {tasks.map((task,index) => 
-                <li></li>
+                <li key={index}>
+                    <span className="text">{task}</span>
+                    <button
+                    className="del-btn"
+                    onClick={delTask(index)}>
+                        Delete
+                    </button>
+                </li>
                 )}
             </ol>
             </>
