@@ -59,15 +59,20 @@ button:focus-visible {
 .to-do-list{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 50px;
+display:flex;
+justify-content: center;
 }
 
 li{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px ;
  margin: 10px;
+ display:flex;
+ align-items:center;
  
 }
 .placeHldr{
   font-size: 14px;
-  border: 1.5px solid white;
+  border: 1.5px solid black;
+  background-color:darkblue ;
 }
