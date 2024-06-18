@@ -20,10 +20,18 @@ function ToDoList () {
     }
 
     function moveTaskDown (index) {
-        
+
     }
 
-    return (<></>)
+    return (
+    <><div className="to-do-list">
+            <h1>Todo List</h1>
+        </div>
+        <div>
+            <input
+            type="text"/>
+            </div></>
+    )
 }
 
 export default ToDoList
