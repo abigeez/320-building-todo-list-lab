@@ -36,7 +36,7 @@ function ToDoList () {
              <button className="btnOne"
              onClick={insertTask}
              >
-
+            Submit
             </button>
             </div>
             <ol>
@@ -45,9 +45,20 @@ function ToDoList () {
                     <span className="text">{task}</span>
                     <button
                     className="del-btn"
-                    onClick={delTask(index)}>
+                    onClick={() => delTask(index)}>
                         Delete
                     </button>
+                    <button
+                    className="moveDn-btn"
+                    onClick={() => moveTaskDown(index)}>
+                        ↓
+                    </button>
+                    <button
+                    className="moveUp-btn"
+                    onClick={() => moveTaskUp(index)}>
+                        ↑
+                    </button>
+                  
                 </li>
                 )}
             </ol>
