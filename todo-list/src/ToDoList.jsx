@@ -40,7 +40,9 @@ function ToDoList () {
             </button>
             </div>
             <ol>
-                
+                {tasks.map((task,index) => 
+                <li></li>
+                )}
             </ol>
             </>
     )
