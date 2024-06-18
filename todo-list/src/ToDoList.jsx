@@ -8,13 +8,14 @@ function ToDoList () {
         setNewTask(event.target.value);
     }
     function insertTask(){
-        if(newTask.trim()!==""){}
-        setTasks(t => [...t,newTask]);
+        if(newTask.trim()!== ""){
+        setTasks(t => [...t, newTask]);
         setNewTask("");
     }
+}
 
     function delTask(index) {
-
+        const modTasks = tasks.filter(())
     }
 
     function moveTaskUp(index) {
