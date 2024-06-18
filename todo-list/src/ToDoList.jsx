@@ -56,6 +56,9 @@ function ToDoList () {
                 {tasks.map((task,index) => 
                 <li key={index}>
                     <span className="text">{task}</span>
+                    <input
+                    type="checkbox"
+                />
                     <button
                     className="del-btn"
                     onClick={() => delTask(index)}>
